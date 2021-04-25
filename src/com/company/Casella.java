@@ -3,12 +3,12 @@ package com.company;
 public class Casella {
 
     //Propietats Casella.
-    boolean tapada=true;
-    boolean control=false;
-    boolean mina=false;
-    boolean bandera=false;
-    int valorNumeric=0;
-    String valor = "■";
+    private boolean tapada=true;
+    private boolean control=false;
+    private boolean mina=false;
+    private boolean bandera=false;
+    private int valorNumeric=0;
+    private String valor = "■";
 
     //Constructor
     public Casella(){}
