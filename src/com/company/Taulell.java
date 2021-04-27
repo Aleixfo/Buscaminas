@@ -294,13 +294,18 @@ public class Taulell {
     public void imprimirTaulell(Casella[][] taula) {
 
         //For d'ordenació del taulell, peque quedin els numeros de cordenades ben estructurats
-        System.out.print("   ");
+
+        System.out.print("     ");
         for (int x = 0; x < this.y; x++) {
 
 
-            System.out.print(" ");
-                System.out.print(x + "    ");
-
+            if (x<10) {
+                System.out.print(" ");
+                System.out.print("[ " + x + " ]");
+            }
+            if (x>=10){
+                System.out.print("[ " + x + " ]");
+            }
 
         }
         System.out.println();
@@ -308,9 +313,9 @@ public class Taulell {
         //Bucle que printeja la columna de coordenades
         for (int i = 0; i < this.x; i++) {
             if (i <= 9) {
-                System.out.print(i + " ");
+                System.out.print("[ "+i+" ]" + " ");
             } else {
-                System.out.print(i);
+                System.out.print("[ "+i+" ]");
             }
             for (int j = 0; j < this.y; j++) {
 

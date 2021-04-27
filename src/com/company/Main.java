@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Scanner;
+import java.lang.*;
 
 public class Main {
 
@@ -88,6 +89,10 @@ public class Main {
             taula.realitzarTirada(yPrimeraTirada, xPrimeraTirada, false);
             taula.imprimirTaulell(taula.getTaulell());
 
+            long start = System.currentTimeMillis();
+
+
+
             while (!jocAcabat) {
 
                 System.out.println("*************************************");
@@ -149,6 +154,10 @@ public class Main {
                     System.out.println("*************************************");
                 }
             }
+
+            long end = System.currentTimeMillis();
+            System.out.println("Temps transcorregut: " + ((end - start) / 1000) + " segons.");
+
         } else {
             System.out.println(dificultat + " No es una opcio disponible.");
         }

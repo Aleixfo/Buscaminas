@@ -8,7 +8,7 @@ public class Casella {
     private boolean mina=false;
     private boolean bandera=false;
     private int valorNumeric=0;
-    private String valor = "■";
+    private String valor = "*"; //■
 
     //Constructor
     public Casella(){}
